@@ -1,13 +1,10 @@
 <!doctype html>
-
 <html>
     <head>
         <meta charset="utf-8">
-
-        <title>Mi sitio web YEA</title>
-
+        <title>Mi sitio web YEA - Aplicaciones Web</title>
         <link rel="stylesheet" href="styles.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
@@ -16,21 +13,22 @@
             <h2>Aplicaciones Web</h2>
         </header>
         <nav>
-            <ul>
             <a href="index.html">Inicio</a>
             <a href="serviciosenred.html">Servicios en Red</a>
             <a href="proyectointermodular.html">Proyecto Intermodular</a>
-            </ul>
         </nav>
         <section>
             <aside>
-                <h6><u>Pagina Web no lucratica, solo con fines de entretenimiento y practica</u></h6>
+                <h6><u>Página Web no lucrativa, solo con fines de entretenimiento y práctica</u></h6>
             </aside>
-            <section>
+            <section class="content-wrapper">
                 <article>
-                    <h3 align="center">¿Por qué HTML 5 es el presente y futuro del diseño web?</h3>
-                    <time  pubdate></time>
-                    <img align="center" src="noticia2.jpg" width="650">
+                    <h3>¿Por qué HTML 5 es el presente y futuro del diseño web?</h3>
+                    <time pubdate></time>
+                    
+                    <div class="image-frame-appweb">
+                        <img src="noticia2.jpg" alt="Noticia sobre HTML5" onerror="this.onerror=null;this.src='https://placehold.co/650x300/1e3a8a/ffffff?text=IMAGEN+HTML5';">
+                    </div>
                 </article>
                 <article>
                     Actualmente el HTML5 se trata de un sistema que permite formatear el layout de las páginas web<br>
@@ -40,7 +38,7 @@
                     <br>
                     <br>
                     Otra novedad es que se puede prescindir de programas plug-ins que anteriormente había que instalar<br> 
-                    ara poder ver una determinada web, esto fue un avance importante para dispositivos que de forma nativa<br> 
+                    para poder ver una determinada web, esto fue un avance importante para dispositivos que de forma nativa<br> 
                     no soportaban programas como el de Adobe Flash. De este modo se amplía considerablemente el desarrollo<br>
                     de aplicaciones que se pueden usar en múltiples dispositivos.
                     <br>
@@ -65,9 +63,6 @@
                 </article>
             </section>
         </section>
-        <footer>
-
-        </footer>
+        <footer></footer>
     </body>
-
 </html>
