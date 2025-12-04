@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mi sitio web YEA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h2>LA ROMÁN WEB</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="aplicacionesweb.html" id="appweb">Aplicaciones Web</a>
+        <a href="serviciosenred.html" id="servicios">Servicios en Red</a>
+        <a href="proyectointermodular.html" id="proyecto">Proyecto Intermodular</a>
+    </nav>
+
+    <!-- Flechas -->
+    <div class="flechas-container">
+        <span class="flecha">⬆</span>
+        <span class="flecha">⬆</span>
+        <span class="flecha">⬆</span>
+    </div>
+
+    <div class="datos-interesantes">
+        DATOS INTERESANTES
+    </div>
+
+    <!-- SOBRE MI y dato interesante -->
+    <section class="sobremi-section">
+        <aside>
+            <p><strong>Sobre Mi:</strong></p>
+            <a href="secretosecretoso.html" class="enlace-img">
+                <img src="sobremi.jpeg" alt="Foto de Román">
+            </a>
+        </aside>
+        <div class="dato-informatica" id="dato-informatica" onclick="nuevoDato()">
+            <strong>DATO INTERESANTE DE INFORMÁTICA:</strong><br>
+            El primer disco duro de la historia, creado por IBM en 1956, tenía una capacidad de solo 5 MB y pesaba más de una tonelada.
+        </div>
+    </section>
+
+    <section id="section2">
+        <p>Me llamo Román, me gusta jugar al LoL con mi compañero Adrián Hurtado. Él es muy malo.</p>
+        <strong>Estudios:</strong><br>
+        - Título de profesional básico en Informática y telecomunicaciones<br>
+        - Educación Secundaria Obligatoria<br>
+        - Un título de Cisco que no sé qué es<br>
+        - Carnet de carretillero y traspaleta eléctrica<br>
+        - Carnet de conducir y vehículo propio<br><br>
+        <strong>Actualmente:</strong><br>
+        <em>
+            Estoy estudiando un Grado Medio de informática,
+            donde una de las asignaturas más divertidas a mi gusto son HTML y Python.
+        </em>
+    </section>
+
+    <footer></footer>
+
+    <script>
+    // Dato interesante informático (cambiar o añadir datos)
+    const DATOS = [
+        "El primer disco duro, creado por IBM en 1956, tenía solo 5 MB y pesaba más de una tonelada.",
+        "El lenguaje de programación Python debe su nombre al grupo humorístico británico 'Monty Python'.",
+        "La palabra 'bug' (error) se popularizó cuando Grace Hopper encontró una polilla dentro de un ordenador en 1947.",
+        "El primer dominio registrado fue symbolics.com en 1985.",
+        "El primer correo electrónico de la historia fue enviado por Ray Tomlinson en 1971.",
+        "El sistema operativo Linux fue creado por Linus Torvalds en 1991.",
+        "El logo de Apple tiene una mordida para que no se confunda con una cereza.",
+        "El primer sitio web creado fue info.cern.ch por Tim Berners-Lee en 1991.",
+        "En 1971 el primer microprocesador comercial fue el Intel 4004.",
+        "El emoji más usado mundialmente es el emoji de la cara con lágrimas de alegría 😂."
+    ];
+    let datoActual = 0;
+
+    function nuevoDato() {
+        datoActual = (datoActual + 1) % DATOS.length;
+        document.getElementById("dato-informatica").innerHTML = "<strong>DATO INTERESANTE DE INFORMÁTICA:</strong><br>" + DATOS[datoActual];
+    }
+    </script>
+</body>
+</html>
+
