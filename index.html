@@ -13,9 +13,9 @@
     </header>
 
     <nav>
-        <a href="aplicacionesweb.html" id="appweb">Aplicaciones Web</a>
-        <a href="serviciosenred.html" id="servicios">Servicios en Red</a>
-        <a href="proyectointermodular.html" id="proyecto">Proyecto Intermodular</a>
+        <a id="appweb">Aplicaciones Web</a>
+        <a id="servicios">Servicios en Red</a>
+        <a id="proyecto">Proyecto Intermodular</a>
     </nav>
 
     <div class="flechas-container">
@@ -31,9 +31,10 @@
     <section class="sobremi-section">
         <aside>
             <p><strong>Sobre Mi:</strong></p>
-            <a href="secretosecretoso.html" class="enlace-img">
-                <img src="sobremi.jpeg" alt="Foto de Román" onerror="this.onerror=null;this.src='https://placehold.co/140x180/6495ed/ffffff?text=FOTO+ROMAN';">
-            </a>
+            <div class="enlace-img">
+                <img src="sobremi.jpeg" alt="Foto de Román"
+                     onerror="this.onerror=null;this.src='https://placehold.co/140x180/6495ed/ffffff?text=FOTO+ROMAN';">
+            </div>
         </aside>
         
         <div class="dato-informatica-wrapper">
@@ -62,25 +63,26 @@
     <footer></footer>
 
     <script>
-    const DATOS = [
-        "El primer disco duro, creado por IBM en 1956, tenía solo 5 MB y pesaba más de una tonelada.",
-        "El lenguaje de programación Python debe su nombre al grupo humorístico británico 'Monty Python'.",
-        "La palabra 'bug' (error) se popularizó cuando Grace Hopper encontró una polilla dentro de un ordenador en 1947.",
-        "El primer dominio registrado fue symbolics.com en 1985.",
-        "El primer correo electrónico de la historia fue enviado por Ray Tomlinson en 1971.",
-        "El sistema operativo Linux fue creado por Linus Torvalds en 1991.",
-        "El logo de Apple tiene una mordida para que no se confunda con una cereza.",
-        "El primer sitio web creado fue info.cern.ch por Tim Berners-Lee en 1991.",
-        "En 1971 el primer microprocesador comercial fue el Intel 4004.",
-        "El emoji más usado mundialmente es el emoji de la cara con lágrimas de alegría 😂."
-    ];
-    let datoActual = 0;
+        const DATOS = [
+            "El primer disco duro, creado por IBM en 1956, tenía solo 5 MB y pesaba más de una tonelada.",
+            "El lenguaje de programación Python debe su nombre al grupo humorístico británico 'Monty Python'.",
+            "La palabra 'bug' (error) se popularizó cuando Grace Hopper encontró una polilla dentro de un ordenador en 1947.",
+            "El primer dominio registrado fue symbolics.com en 1985.",
+            "El primer correo electrónico de la historia fue enviado por Ray Tomlinson en 1971.",
+            "El sistema operativo Linux fue creado por Linus Torvalds en 1991.",
+            "El logo de Apple tiene una mordida para que no se confunda con una cereza.",
+            "El primer sitio web creado fue info.cern.ch por Tim Berners-Lee en 1991.",
+            "En 1971 el primer microprocesador comercial fue el Intel 4004.",
+            "El emoji más usado mundialmente es el de la cara con lágrimas de alegría."
+        ];
 
-    function nuevoDato() {
-        datoActual = (datoActual + 1) % DATOS.length;
-        document.getElementById("dato-informatica").innerHTML = "<strong>DATO INTERESANTE DE INFORMÁTICA:</strong><br>" + DATOS[datoActual];
-    }
+        let datoActual = 0;
+
+        function nuevoDato() {
+            datoActual = (datoActual + 1) % DATOS.length;
+            document.getElementById("dato-informatica").innerHTML =
+                "<strong>DATO INTERESANTE DE INFORMÁTICA:</strong><br>" + DATOS[datoActual];
+        }
     </script>
 </body>
 </html>
-
